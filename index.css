@@ -1,0 +1,128 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url("Imagenes/fondo.png");
+    margin:6%;
+}
+
+h1{
+    font-family: "Lemon", cursive;
+    line-height: 3.5;
+    font-size: 200px;
+    text-align: center;
+    background-color:rgb(250, 240, 225);
+    border: double rgb(140, 83, 0);
+    color:rgba(255, 149, 34, 0.4);
+    border-radius: 2%;
+}
+
+.container{
+    display: flex;
+    padding-top: 50px;
+}
+
+.navegador{
+    display:flex;
+    margin-top: -350px;
+    justify-content: center;
+    letter-spacing: 8px
+}
+
+.barra{
+    margin-left:5px;
+    margin-right: 4px;
+    text-decoration: none;
+    color: rgb(140, 83, 0);
+}
+
+.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five{
+    color:rgb(140, 83, 0);
+}
+
+h2, p, li, a, input::placeholder, ul{
+    font-family: 'Expletus Sans', cursive;
+}
+
+input::placeholder{
+    color:rgb(140, 83, 0);
+}
+
+h2{
+    line-height:2;
+    font-size:30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(140, 83, 0);
+}
+
+a:hover,.barra:hover{
+    color: rgba(255, 149, 34, 0.4);
+}
+
+.ladoContrario{
+    text-align: end;
+}
+
+footer{
+    text-align: center;
+    margin-top:auto;
+}
+
+#sobreMi{
+    margin-top:16%;
+}
+
+.withFlex{
+    display:flex;
+}
+
+input{
+    margin:1%
+}
+
+img{
+    height: 400px;
+}
+
+.fa-bars{
+    background-color:rgb(250, 240, 225);
+    border:none;
+    color:rgba(255, 149, 34, 0.4);
+
+}
+
+.navegador_Responsive{
+    display:none;
+    background-color:rgb(250, 240, 225);
+    
+}
+
+.nuevo_nav{
+    display:none;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+@media(max-width: 1319px){
+    h1{
+        font-size: 42px;
+    }
+    .navegador{
+        display:none;
+    }
+    .navegador_Responsive{
+        display:block;
+    }
+    #sobreMi{
+        margin-top:0%;
+
+    }
+}

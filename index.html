@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8c5300">
+    <title>Mi portafolio</title>
+    <link rel="stylesheet" tipe="text/css" href="normalize.css">
+    <link rel="stylesheet" tipe="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="Imagenes/icon.ico">
+    <link rel="canonical" href="">
+    <script src="https://kit.fontawesome.com/1a869df086.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navegador_Responsive">
+            <button class="boton_responsive fas fa-bars" onclick="mostrar()"></button> <br>
+            <div class="nuevo_nav">
+                <i class="fas fa-dice-one"></i>
+                <a href="#sobreMi"><ul class="ul_responsive">Sobre mi</ul></a>
+                <i class="fas fa-dice-two"></i>
+                <a href="#conocimientos"><ul class="ul_responsive">Conocimientos</ul></a>
+                <i class="fas fa-dice-three"></i>
+                <a href="#cursos"><ul class="ul_responsive">Cursos hechos</ul></a>
+                <i class="fas fa-dice-four"></i>
+                <a href="#proyectos"><ul class="ul_responsive">Proyectos</ul></a>
+                <i class="fas fa-dice-five"></i>
+                <a href="#contactame"><ul class="ul_responsive">Contactame</ul></a>
+            </div>
+
+        </nav>
+        <h1>Mi portafolio</h1>
+        <nav class="navegador">
+            <i class="fas fa-dice-one"></i>
+            <a href="#sobreMi"><ul class="barra">Sobre mi</ul></a>
+            <i class="fas fa-dice-two"></i>
+            <a href="#conocimientos"><ul class="barra">Conocimientos</ul></a>
+            <i class="fas fa-dice-three"></i>
+            <a href="#cursos"><ul class="barra">Cursos hechos</ul></a>
+            <i class="fas fa-dice-four"></i>
+            <a href="#proyectos"><ul class="barra">Proyectos</ul></a>
+            <i class="fas fa-dice-five"></i>
+            <a href="#contactame"><ul class="barra">Contactame</ul></a>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <article>
+                <h2 id="sobreMi">Sobre mi.</h2>
+                <p>Me llamo Ana Clara Culeddu, tengo 17 años y estudio una tecnicatura en Computación. <br>
+                    Tengo 0 experiencia en trabajos pero me gustaría empezar :)
+                </p>
+            </article>
+            <article class="ladoContrario">
+                <h2 id="conocimientos">Conocimientos.</h2>
+                <p>Mis conocimientos se basan especialmente en el Front End: Manejo HTML, CSS y Javascript; además de la 
+                    biblioteca Bootstrap. <br>
+                    Fuera de desarrollo web, tengo conocimientos sobre Python y sobre SQLite. 
+                </p>
+            </article>
+            <article>
+                <h2 id="cursos">Cursos hechos.</h2>
+                <p> - Desarrollo web Nivel 1 de Aprende Programando Virtual.</p>
+                <img src="Imagenes/desarrollo1.png" alt="desarrollo web 1 certificado">
+                <img src="Imagenes/participacion.png" alt="certificado de participación">
+                <p> - Desarrollo web Nivel 2 de Aprende Programando Virtual.</p>
+                <img src="Imagenes/desarrollo2.png" alt="desarrollo web 1 certificado">
+                <p> - Inglés Nivel VI del Ciclo Básico de Centro Universitario de Idiomas.</p>
+                <img src="Imagenes/cuinivelbasico.png" alt="cui nivel básico">
+                <p> - Inglés Nivel I de Consolidación de Centro Universitario de Idiomas.</p>
+                <img src="Imagenes/cuiconsolidacion.png" alt="cui consolidacion">
+            </article>
+            <article class="ladoContrario">
+                <h2 id="proyectos">Proyectos.</h2>
+                <p>Estos son algunos proyectos que he hecho a lo largo de mi aprendizaje:</p>
+                <ul>
+                    <a href="https://bibliolibro.netlify.app/" target="_BLANCK"> · Bibliolibro</a>: Este trabajo fue realizado para el curso
+                    de desarrollo web 1. Si bien es un simulador de blog sencillo hecho principalmente con HTML Y CSS, tiene la 
+                    característica de utilizar en su página principal elementos con Bootstrap. Le agregué un poco de código de Javascript.
+                </ul>
+            </article>
+            <article>
+                <h2 id="contactame">Contactame.</h2>
+                <form method="post" action="https://formsubmit.co/anacc11104@gmail.com" class="withFlex">
+                    <p>Mail:</p>
+                    <input type="email" required placeholder="Ingrese su mail." name="Mail del cliente.">
+                    <p>Pedido:</p>
+                    <input type="text" required placeholder="Ingrese descripción de lo deseado." name="Descripción del producto.">
+                    <p>Día de entrega:</p>
+                    <input type="date" name="Día ideal de entrega.">
+                    <p>Fecha de entrega:</p>
+                    <input type="time" name="Hora ideal de entrega.">
+                    <input type="submit" name="Botón de envio.">
+                </form>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <h6>
+        Página hecha por Ana Clara Culeddu<br>
+        Todos los derechos reservados <br>
+        Sigame en mis redes sociales
+        </h6>
+    </footer>
+    <script src="cod.js"></script>
+</body>
+</html>
