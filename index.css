@@ -1,3 +1,9 @@
+*::selection{
+    color:rgba(255, 149, 34, 0.4);
+    background-color:rgb(250, 240, 225);
+}
+
+
 html{
     height: 100%;
     scroll-behavior: smooth;
@@ -6,6 +12,7 @@ html{
 body{
     background-image: url("Imagenes/fondo.png");
     margin:6%;
+    animation: comienzo 3s backwards;
 }
 
 h1{
@@ -38,16 +45,33 @@ h1{
     color: rgb(140, 83, 0);
 }
 
-.fa-dice-one, .fa-dice-two, .fa-dice-three, .fa-dice-four, .fa-dice-five{
+.fa-dice-one, 
+.fa-dice-two, 
+.fa-dice-three, 
+.fa-dice-four, 
+.fa-dice-five{
     color:rgb(140, 83, 0);
 }
 
-h2, p, li, a, input::placeholder, ul{
+h2, 
+p, 
+li, 
+a, 
+input::placeholder,
+textarea::placeholder, 
+ul{
     font-family: 'Expletus Sans', cursive;
 }
 
-input::placeholder{
+input::placeholder, 
+textarea::placeholder{
     color:rgb(140, 83, 0);
+    padding: .5%;
+}
+
+.envio{
+    width:150px;
+    cursor:pointer;
 }
 
 h2{
@@ -58,35 +82,39 @@ h2{
 a{
     text-decoration: none;
     color: rgb(140, 83, 0);
+    cursor:pointer;
 }
 
-a:hover,.barra:hover{
+a:hover,
+.barra:hover{
     color: rgba(255, 149, 34, 0.4);
-}
-
-.ladoContrario{
-    text-align: end;
 }
 
 footer{
     text-align: center;
     margin-top:auto;
+    display:none;
 }
 
-#sobreMi{
-    margin-top:16%;
+article{
+    display:none;
 }
 
 .withFlex{
     display:flex;
 }
 
-input{
-    margin:1%
+input,
+textarea{
+    margin: 1%;
+    width: 1650px;
+    height: 50px;
+    padding: 1%;
 }
 
-img{
-    height: 400px;
+textarea{
+    height:100px;
+    resize: none;
 }
 
 .fa-bars{
@@ -111,6 +139,18 @@ form{
     flex-direction: column;
 }
 
+#sobreMi, 
+#conocimientos{
+    margin-top:27%;
+}
+
+#proyectos,
+#contactame,
+#cursos{
+    margin-top:16%;
+}
+
+
 @media(max-width: 1319px){
     h1{
         font-size: 42px;
@@ -124,5 +164,33 @@ form{
     #sobreMi{
         margin-top:0%;
 
+    }
+    input,
+    textarea{
+        width: 1px;
+    }
+}
+
+@media(max-width: 1319px){
+    input,
+    textarea{
+        width: 300px;
+    }
+}
+
+
+@media(max-width: 290px){
+    h1{
+        font-size: 40px;
+    }
+
+}
+
+@keyframes comienzo {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
     }
 }

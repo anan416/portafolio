@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="Imagenes/icon.ico">
-    <link rel="canonical" href="https://portafolioculeddu.netlify.app">
+    <link rel="canonical" href="">
     <script src="https://kit.fontawesome.com/1a869df086.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,61 +19,56 @@
             <button class="boton_responsive fas fa-bars" onclick="mostrar()"></button> <br>
             <div class="nuevo_nav">
                 <i class="fas fa-dice-one"></i>
-                <a href="#sobreMi"><ul class="ul_responsive">Sobre mi</ul></a>
+                <a onclick="sobreMi()"><ul class="barra">Sobre mi</ul></a>
                 <i class="fas fa-dice-two"></i>
-                <a href="#conocimientos"><ul class="ul_responsive">Conocimientos</ul></a>
+                <a onclick="conocimientos()"><ul class="barra">Conocimientos</ul></a>
                 <i class="fas fa-dice-three"></i>
-                <a href="#cursos"><ul class="ul_responsive">Cursos hechos</ul></a>
+                <a onclick="cursos()"><ul class="barra">Cursos hechos</ul></a>
                 <i class="fas fa-dice-four"></i>
-                <a href="#proyectos"><ul class="ul_responsive">Proyectos</ul></a>
+                <a onclick="proyectos()"><ul class="barra">Proyectos</ul></a>
                 <i class="fas fa-dice-five"></i>
-                <a href="#contactame"><ul class="ul_responsive">Contactame</ul></a>
+                <a onclick="contactame()"><ul class="barra">Contactame</ul></a>
             </div>
 
         </nav>
         <h1>Mi portafolio</h1>
         <nav class="navegador">
             <i class="fas fa-dice-one"></i>
-            <a href="#sobreMi"><ul class="barra">Sobre mi</ul></a>
+            <a onclick="sobreMi()"><ul class="barra">Sobre mi</ul></a>
             <i class="fas fa-dice-two"></i>
-            <a href="#conocimientos"><ul class="barra">Conocimientos</ul></a>
+            <a onclick="conocimientos()"><ul class="barra">Conocimientos</ul></a>
             <i class="fas fa-dice-three"></i>
-            <a href="#cursos"><ul class="barra">Cursos hechos</ul></a>
+            <a onclick="cursos()"><ul class="barra">Cursos hechos</ul></a>
             <i class="fas fa-dice-four"></i>
-            <a href="#proyectos"><ul class="barra">Proyectos</ul></a>
+            <a onclick="proyectos()"><ul class="barra">Proyectos</ul></a>
             <i class="fas fa-dice-five"></i>
-            <a href="#contactame"><ul class="barra">Contactame</ul></a>
+            <a onclick="contactame()"><ul class="barra">Contactame</ul></a>
         </nav>
     </header>
     <div class="container">
         <section>
-            <article>
-                <h2 id="sobreMi">Sobre mi.</h2>
+            <article id="sobreMi">
+                <h2>Sobre mi.</h2>
                 <p>Me llamo Ana Clara Culeddu, tengo 17 años y estudio una tecnicatura en Computación. <br>
-                    No tengo experiencia trabajando, por lo que me gustaría empezar con desarrollo web ya que creo 
-                    que es en lo que mejor me especializo.
+                    No tengo experiencia trabajando, por lo que me gustaría empezar con desarrollo web ya que creo que es en lo que mejor me especializo.
                 </p>
             </article>
-            <article class="ladoContrario">
-                <h2 id="conocimientos">Conocimientos.</h2>
+            <article id="conocimientos">
+                <h2>Conocimientos.</h2>
                 <p>Mis conocimientos se basan especialmente en el Front End: Manejo HTML, CSS (y el framework Bootstrap), Javascript y lo básico de Git. <br>
-                    Fuera de desarrollo web, tengo conocimientos sobre Python (y su librería de interfaz gráfica tkinter) y SQLite. 
+                    Fuera de desarrollo web, tengo conocimientos sobre Python (y su librería de interfaz gráfica tkinter) y SQLite.
                 </p>
             </article>
-            <article>
-                <h2 id="cursos">Cursos hechos.</h2>
-                <p> - Desarrollo web Nivel 1 de Aprende Programando Virtual.</p>
+            <article id="cursos">
+                <h2>Cursos hechos.</h2>
                 <img src="Imagenes/desarrollo1.png" alt="desarrollo web 1 certificado">
                 <img src="Imagenes/participacion.png" alt="certificado de participación">
-                <p> - Desarrollo web Nivel 2 de Aprende Programando Virtual.</p>
                 <img src="Imagenes/desarrollo2.png" alt="desarrollo web 1 certificado">
-                <p> - Inglés Nivel VI del Ciclo Básico de Centro Universitario de Idiomas.</p>
                 <img src="Imagenes/cuinivelbasico.png" alt="cui nivel básico">
-                <p> - Inglés Nivel I de Consolidación de Centro Universitario de Idiomas.</p>
                 <img src="Imagenes/cuiconsolidacion.png" alt="cui consolidacion">
             </article>
-            <article class="ladoContrario">
-                <h2 id="proyectos">Proyectos.</h2>
+            <article id="proyectos">
+                <h2>Proyectos.</h2>
                 <p>Al ser estudiante, no he tenido tiempo para proyectos personales, pero he practicado a través de cursos y ejercicios que podrán
                     encontrar en mi Github (En el final de este portafolio lo van a encontrar). <br>
                     Lo que quiero dejar en este portafolio son esos proyectos personales:</p> <br><br>
@@ -88,23 +83,25 @@
                     Por el momento tengo la página principal.
                 </ul>
             </article>
-            <article>
-                <h2 id="contactame">Contactame.</h2>
+            <article id="contactame">
+                <h2>Contactame.</h2>
                 <form method="post" action="https://formsubmit.co/anacc11104@gmail.com" class="withFlex">
                     <p>Mail:</p>
                     <input type="email" required placeholder="Ingrese su mail." name="Mail del cliente.">
                     <p>Pedido:</p>
-                    <input type="text" required placeholder="Ingrese descripción de lo deseado." name="Descripción del producto.">
+                    <textarea required placeholder="Ingrese descripción de lo deseado." name="Descripción del producto."></textarea>
                     <p>Día de entrega:</p>
                     <input type="date" name="Día ideal de entrega.">
                     <p>Fecha de entrega:</p>
                     <input type="time" name="Hora ideal de entrega.">
-                    <input type="submit" name="Botón de envio.">
+                    <input type="submit" name="Botón de envio." class="envio">
                 </form>
             </article>
         </section>
     </div>
     <footer>
+        <br><br>
+        <hr><hr>
         <h6>
         Página hecha por Ana Clara Culeddu<br>
         Todos los derechos reservados <br>
