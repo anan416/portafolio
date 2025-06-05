@@ -14,114 +14,91 @@
     <script src="https://kit.fontawesome.com/1a869df086.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <div class="fondo">
+        <header>
         <nav class="navegador_Responsive">
             <button class="boton_responsive fas fa-bars" onclick="mostrar()"></button> <br>
             <div class="nuevo_nav">
                 <i class="fas fa-dice-one"></i>
-                <a onclick="sobreMi()" href="#sobreMi" class="seccion1"><ul class="barra">Sobre mi</ul></a>
+                <a onclick="conocimientos(); mover();" href="#conocimientos" class="seccion2"><ul class="barra">Conocimientos</ul></a>
                 <i class="fas fa-dice-two"></i>
-                <a onclick="conocimientos()" href="#conocimientos" class="seccion2"><ul class="barra">Conocimientos</ul></a>
+                <a onclick="cursos(); mover();" href="#cursos" class="seccion3"><ul class="barra">Certificados</ul></a>
                 <i class="fas fa-dice-three"></i>
-                <a onclick="cursos()" href="#cursos" class="seccion3"><ul class="barra">Certificados</ul></a>
+                <a onclick="proyectos(); mover();" href="#proyectos" class="seccion4"><ul class="barra">Proyectos</ul></a>
                 <i class="fas fa-dice-four"></i>
-                <a onclick="proyectos()" href="#proyectos" class="seccion4"><ul class="barra">Proyectos</ul></a>
-                <i class="fas fa-dice-five"></i>
-                <a onclick="contactame()" href="#contactame" class="seccion5"><ul class="barra">Contactame</ul></a>
+                <a onclick="contactame(); mover();" href="#contactame" class="seccion5"><ul class="barra">Contactame</ul></a>
             </div>
-
-        </nav>
+        </nav> 
         <h1>Mi portafolio</h1>
         <nav class="navegador">
             <i class="fas fa-dice-one"></i>
-            <a onclick="sobreMi()" href="#sobreMi"><ul class="barra seccion1">Sobre mi</ul></a>
+            <a onclick="conocimientos(); mover();" href="#conocimientos" class="seccion2"><ul class="barra">Conocimientos</ul></a>
             <i class="fas fa-dice-two"></i>
-            <a onclick="conocimientos()" href="#conocimientos" class="seccion2"><ul class="barra">Conocimientos</ul></a>
+            <a onclick="cursos(); mover();" href="#cursos" class="seccion3"><ul class="barra">Certificados</ul></a>
             <i class="fas fa-dice-three"></i>
-            <a onclick="cursos()" href="#cursos" class="seccion3"><ul class="barra">Certificados</ul></a>
+            <a onclick="proyectos(); mover();" href="#proyectos" class="seccion4"><ul class="barra">Proyectos</ul></a>
             <i class="fas fa-dice-four"></i>
-            <a onclick="proyectos()" href="#proyectos" class="seccion4"><ul class="barra">Proyectos</ul></a>
-            <i class="fas fa-dice-five"></i>
-            <a onclick="contactame()" href="#contactame" class="seccion5"><ul class="barra">Contactame</ul></a>
-        </nav>
-    </header>
-    <div class="container">
-        <section>
-            <article id="sobreMi">
-                <h2>Sobre mi.</h2>
-                <p>Me llamo Ana Clara Culeddu, tengo 19 años y soy técnica en computación a nivel secundario, además de estudiante de ingeniería de sistemas de información <br>
-                    No cuento con experiencias de puestos laborales. Sin embargo, en un futuro me gustaría empezar como desarrolladora
-                    web. El desarrollo web es la rama que más me apasiona. 
-                </p>
-            </article>
-            <article id="conocimientos">
-                <h2>Conocimientos.</h2>
-                <p>Mis conocimientos se basan especialmente en el Front End: Manejo HTML, CSS (y el framework Bootstrap), Javascript y lo básico de Git. <br>
-                    Fuera de desarrollo web, tengo conocimientos sobre Python (y su librería de interfaz gráfica tkinter), SQLite y MYsql en cuanto a bases
-                    de datos y lo básico de C++ y Java.
-                </p>
-            </article>
-            <article id="cursos">
-                <h2>Certificados.</h2>
-                <img src="Imagenes/diplomasecundario.jpeg" alt="diploma del secundario">
-                <img src="Imagenes/innovar.jpeg" alt="innovar">
-                <img src="Imagenes/desarrollo1.png" alt="desarrollo web 1 certificado">
-                <img src="Imagenes/participacion.png" alt="certificado de participación">
-                <img src="Imagenes/desarrollo2.png" alt="desarrollo web 1 certificado">
-                <img src="Imagenes/cuinivelbasico.png" alt="cui nivel básico">
-                <img src="Imagenes/cuiconsolidacion.png" alt="cui consolidacion">
-                <img src="Imagenes/asistencia.jpeg" alt="mejor asistencia">
-                <img src="Imagenes/aidis.png" alt="aidis">
-            </article>
-            <article id="proyectos">
-                <h2>Proyectos.</h2>
-                <p>Dentro de mi Github (link en el final del portafolio), podrán encontrar ejercicios y proyectos con los que aprendí<br>
-                    Destaco algunos proyectos:</p> <br><br>
-                <ul>
-                    <a href="https://taketheball.netlify.app/" target="_BLANCK"> · Take the ball</a>: es el primer videojuego que programé.
-                    Consiste en intentar agarrar la pelota de la pantalla, pero esta se mueve cuando el mouse pasa por encima de ella. La
-                    dificultad del juego es encontrar una estrategia para agarrar la pelota.
-                </ul> <br><br>    
-                <ul>
-                    <a href="https://padlet.com/anacc11104/tuhorario-kk3yg55lur2ilgcv" target="_BLANCK"> · TuHorario</a>: realizado para
-                    la materia "Proyecto Informático I", es un planner semanal programado con Python y con uso de la base de datos SQLite.
-                    Permite al usuario organizar sus horarios, con una función extra para guardar links y acceder a ellos con facilidad.
-                </ul> <br><br>
-                <ul>
-                    <a href="https://github.com/anan416/muddap.git" target="_BLANCK"> · Muddap</a>: realizado para
-                    la materia "Proyecto Informático II", es una aplicación de consola para organizar las cajas
-                    de mudanza de manera más sencilla y rápida. Se programó con C++, utilizando archivos.
-                </ul> <br><br>                                     
-                <ul>
-                    <a href="https://randomwebpages.netlify.app/" target="_BLANCK"> · Random Webpages</a>: Esta página en inglés está programada
-                    para llevarte a otro sitio web según el botón que eligas. Se encuentran los sitios divertidos, para estudiar, para ver 
-                    películas y para jugar videojuegos.
-                </ul> <br><br>
-                <ul>
-                    <a href="https://bibliolibro.netlify.app/" target="_BLANCK"> · Bibliolibro</a>: Este trabajo fue realizado para el curso
-                    de desarrollo web 1. Si bien es un simulador de blog sencillo hecho principalmente con HTML Y CSS, tiene la 
-                    característica de utilizar en su página principal elementos con Bootstrap. Le agregué un poco de código de Javascript.
-                </ul> <br><br>
-                <ul>
-                    <a href="https://anncalculator.netlify.app/" target="_BLANCK"> · Ann Calculator</a>: Es una calculadora con funciones avanzadas, además de 
-                    contar con animación al tener el modo oscuro.
-                </ul>      
-            </article>
-            <article id="contactame">
-                <h2>Contactame.</h2>
-                <form method="post" action="https://formsubmit.co/anacc11104@gmail.com" class="withFlex">
-                    <p>Mail:</p>
-                    <input type="email" required placeholder="Ingrese su mail." name="Mail del cliente.">
-                    <p>Pedido:</p>
-                    <textarea required placeholder="Ingrese descripción de lo deseado." name="Descripción"></textarea>
-                    <input type="submit" name="Botón de envio." class="envio">
-                </form>
-            </article>
-        </section>
+            <a onclick="contactame(); mover();" href="#contactame" class="seccion5"><ul class="barra">Contactame</ul></a>
+        </nav>        
+        </header>
+        <div class="container">
+            <section>
+                <article id="conocimientos">
+                    <h2>Conocimientos.</h2>
+                    <p>Mis conocimientos se basan especialmente en el Front End: Manejo HTML, CSS y lo básico de Javascript. <br>
+                    Fuera de desarrollo web, tengo conocimientos en lenguajes como Python, C++, Java y C. De forma autodidacta aprendí C#. <br>
+                    En cuanto a bases de datos, manejo SQLite y MYsql. <br>
+                    Tengo experiencia con github, especialmente a la hora de trabajar en equipo.
+                    </p>
+                </article>
+                <article id="cursos">
+                    <h2>Certificados.</h2>
+                    <img src="Imagenes/diplomasecundario.jpeg" alt="diploma del secundario">
+                    <img src="Imagenes/innovar.jpeg" alt="innovar">
+                    <img src="Imagenes/desarrollo1.png" alt="desarrollo web 1 certificado">
+                    <img src="Imagenes/participacion.png" alt="certificado de participación">
+                    <img src="Imagenes/desarrollo2.png" alt="desarrollo web 1 certificado">
+                    <img src="Imagenes/cuinivelbasico.png" alt="cui nivel básico">
+                    <img src="Imagenes/cuiconsolidacion.png" alt="cui consolidacion">
+                    <img src="Imagenes/asistencia.jpeg" alt="mejor asistencia">
+                    <img src="Imagenes/aidis.png" alt="aidis">
+                </article>
+                <article id="proyectos">
+                    <h2>Proyectos.</h2>
+                    <a href="https://taketheball.netlify.app/" target="_BLANCK"><img src="Imagenes/taketheball.png" alt=""></a>
+                    <p>Take the ball</p>
+                    <p>Videojuego · JS · Inglés</p> <br>
+                    <a href="https://padlet.com/anacc11104/tuhorario-kk3yg55lur2ilgcv" target="_BLANCK"><img src="Imagenes/tuhorario.png" alt=""></a>
+                    <p>Tu horario</p>
+                    <p>Planner virtual · Python · TKinter</p> <br>
+                    <a href="https://github.com/anan416/muddap.git" target="_BLANCK"><img src="Imagenes/muddap.png" alt=""></a>
+                    <p>Muddap</p>
+                    <p>Consola · C++ · Archivos</p> <br>
+                    <a href="https://randomwebpages.netlify.app/" target="_BLANCK"><img src="Imagenes/randomwebpages.png" alt=""></a>
+                    <p>Random Webpages</p>
+                    <p>Random · JS · Inglés</p> <br>
+                    <a href="https://bibliolibro.netlify.app/" target="_BLANCK"><img src="Imagenes/bibliolibro.png" alt=""></a>
+                    <p>Bibliolibro</p>
+                    <p>Simulador de blog · Diseño web · Bootstrap</p> <br>
+                    <a href="https://anncalculator.netlify.app/" target="_BLANCK"><img src="Imagenes/anncalculator.png" alt=""></a>
+                    <p>Ann Calculator</p>
+                    <p>Calculador · JS · Animaciones</p> <br>
+                </article>
+                <article id="contactame">
+                    <h2>Contactame.</h2>
+                    <form method="post" action="https://formsubmit.co/anacc11104@gmail.com" class="withFlex">
+                        <p>Mail:</p>
+                        <input type="email" required placeholder="Ingrese su mail." name="Mail del cliente.">
+                        <p>Mensaje:</p>
+                        <textarea required placeholder="Ingrese mensaje" name="Descripción"></textarea>
+                        <input type="submit" name="Botón de envio." class="envio">
+                    </form>
+                </article>
+            </section>
+        </div>
     </div>
     <footer>
         <br><br>
-        <hr><hr>
         <h6>
         Página hecha por Ana Clara Culeddu<br>
         Todos los derechos reservados <br>

@@ -1,9 +1,10 @@
-yo = document.getElementById("sobreMi");
 conoc = document.getElementById("conocimientos");
 cur = document.getElementById("cursos");
 pro = document.getElementById("proyectos");
 cont = document.getElementById("contactame");
 footer = document.querySelector("footer");
+
+titulo = document.querySelector("h1");
 
 
 function mostrar(){
@@ -15,17 +16,12 @@ function mostrar(){
     }
 }
 
-function sobreMi(){
-    yo.style.display = "block";
-    conoc.style.display = "none";
-    cur.style.display = "none";
-    pro.style.display = "none";
-    cont.style.display = "none";
-    footer.style.display = "block";
+function mover(){
+    titulo.style.top = "-30px";
+    titulo.style.fontSize = "50px";
 }
 
 function conocimientos(){
-    yo.style.display = "none";
     conoc.style.display = "block";
     cur.style.display = "none";
     pro.style.display = "none";
@@ -34,7 +30,6 @@ function conocimientos(){
 }
 
 function cursos(){
-    yo.style.display = "none";
     conoc.style.display = "none";
     cur.style.display = "block";
     pro.style.display = "none";
@@ -43,7 +38,6 @@ function cursos(){
 }
 
 function proyectos(){
-    yo.style.display = "none";
     conoc.style.display = "none";
     cur.style.display = "none";
     pro.style.display = "block";
@@ -52,7 +46,6 @@ function proyectos(){
 }
 
 function contactame(){
-    yo.style.display = "none";
     conoc.style.display = "none";
     cur.style.display = "none";
     pro.style.display = "none";
