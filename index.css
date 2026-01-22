@@ -33,7 +33,6 @@ header{
     border: double rgb(140, 83, 0);
     border-radius: 2%;
     padding-bottom: 15vw;
-
 }
 
 img{
@@ -47,15 +46,12 @@ img{
 
 .navegador{
     display:flex;
-    /*padding-top: 1vw;*/
     justify-content: center;
     letter-spacing: 8px;
     position:relative;
 }
 
 .barra{
-    /*margin-left:5px;
-    margin-right: 4px;*/
     text-decoration: none;
     color: rgb(140, 83, 0);
 }
@@ -114,7 +110,7 @@ article{
     display:none;
 }
 
-.withFlex{
+.withFlex, .conocimientos{
     display:flex;
 }
 
@@ -126,14 +122,28 @@ textarea{
     height:5vw;
 }
 
+details{
+    font-family: 'Expletus Sans', cursive;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+details p {
+    font-size: 15px;
+    margin: 5px;
+    color: rgb(140, 83, 0);  
+}
+
+summary{
+    cursor: pointer;
+    list-style-type: circle;
+}
 
 .fa-bars{
     background-color:rgb(250, 240, 225);
     border:none;
     color:rgba(255, 149, 34, 0.4);
     margin: 10px;
-    
-
 }
 
 .navegador_Responsive{
@@ -175,6 +185,9 @@ form{
     }
     .navegador_Responsive{
         display:block;
+    }
+    .conocimientos{
+        flex-direction: column;
     }
 }
 
