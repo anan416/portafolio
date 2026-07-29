@@ -12,7 +12,6 @@ body{
     background-image: url("Imagenes/fondo.png");
     margin:2%;
     animation: comienzo 3s backwards;
-
 }
 
 h1{
@@ -25,14 +24,13 @@ h1{
 header{
     margin-bottom: 10%;
     color:rgba(255, 149, 34, 0.4);
-
 }
 
 .fondo{
     background-color:rgb(250, 240, 225);
     border: double rgb(140, 83, 0);
     border-radius: 2%;
-    padding-bottom: 15vw;
+    padding-bottom: 12.5vw;
 }
 
 img{
@@ -63,13 +61,10 @@ img{
     color:rgb(140, 83, 0);
 }
 
-h2, 
-p, 
-li, 
-a, 
+h2, p, li, a, 
 input::placeholder,
 textarea::placeholder, 
-ul{
+ul,.envio{
     font-family: 'Expletus Sans', cursive;
 }
 
@@ -82,6 +77,12 @@ textarea::placeholder{
 .envio{
     width:150px;
     cursor:pointer;
+    background-color: rgba(255, 149, 34, 0.4);
+    border: rgb(250, 240, 225) double;
+}
+
+.envio:hover{
+    font-size: 20px;
 }
 
 h2{
@@ -126,6 +127,11 @@ details{
     font-family: 'Expletus Sans', cursive;
     font-size: 20px;
     margin-right: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(250, 240, 225);
+    background-color: rgb(250, 240, 225);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform .2s, box-shadow .2s;
 }
 
 details p {
@@ -136,7 +142,7 @@ details p {
 
 summary{
     cursor: pointer;
-    list-style-type: circle;
+    list-style-type: none;
 }
 
 .fa-bars{
@@ -179,6 +185,18 @@ form{
     text-align: center;
 }
 
+.conocimientos, .cursos{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cursos img{
+    width: 50vw;
+    height: auto;
+}
+
 @media(max-width: 990px){
     .navegador{
         display:none;
@@ -186,8 +204,12 @@ form{
     .navegador_Responsive{
         display:block;
     }
-    .conocimientos{
-        flex-direction: column;
+    input, textarea{
+        width: 80vw;
+        height: 10vw;  
+    }
+    .fondo{
+        padding-bottom: 90vw;
     }
 }
 

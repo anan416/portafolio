@@ -3,7 +3,6 @@ cur = document.getElementById("cursos");
 pro = document.getElementById("proyectos");
 cont = document.getElementById("contactame");
 footer = document.querySelector("footer");
-
 titulo = document.querySelector("h1");
 
 
